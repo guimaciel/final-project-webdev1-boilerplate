@@ -40,8 +40,7 @@ const router = async () => {
     const countries = getCountries();
     const params = getParams(match)
 
-    
-    
+        
     if(!match) {
         match = {
             route: routes[0],

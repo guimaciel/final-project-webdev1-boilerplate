@@ -16,7 +16,7 @@ export default class extends AbstractView{
           card.innerHTML = `
                 <div class="country-cards">
                     <div class="country-img">
-                        <img src="${country.flags.png}" />
+                        <a href="countries/${country.cca3}"><img src="${country.flags.png}" /></a>
                     </div>
                     <div class="country-information">
                         <h2 id="countryName">${country.name.common}</h2>
