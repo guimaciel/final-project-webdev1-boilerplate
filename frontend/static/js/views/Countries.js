@@ -15,39 +15,23 @@ export default class extends AbstractView{
 
         for (let country of countries) {
           const card = document.createElement("div");
+          card.className = "center-property-card";
+          card.id = "center-property-card";
           card.innerHTML = `
-
-                <div class="center">
-                    <div class="property-card">
-                        <a href="countries/${country.cca3}">
-                        <div class="property-image" style="background-image:url('${country.flags.png}');">
-                            <div class="property-image-title">
-                            
-                            </div>
-                        </div></a>
-                        <div class="property-description">
-                        <h5>${country.name.common}</h5>
-                        <p>Population: ${country.population}</p>
-                        <p id="region">Region: ${country.region}</p>
-                        <p>Capital: ${country.capital}</p>
-                        </div>
-                    </div>
-                </div>
+                                <a href="countries/${country.cca3}">
+                                <div class="center-property-card-property-image" style="background-image:url('${country.flags.png}');">
+                                    <div class="property-image-title">
+                                    
+                                    </div>
+                                </div></a>
+                                <div class="center-property-card-property-description">
+                                <h5 id="nameCountry">${country.name.common}</h5>
+                                <p>Population: ${country.population}</p>
+                                <p id="region">Region: ${country.region}</p>
+                                <p>Capital: ${country.capital}</p>
+                                </div>
                 `;
 
-            //     <div class="country-cards">
-            //         <div class="country-img">
-            //             <a href="countries/${country.cca3}"><img src="${country.flags.png}" /></a>
-            //         </div>
-            //         <div class="country-information">
-            //             <h2 id="countryName">${country.name.common}</h2>
-            //             <p>Population: ${country.population}</p>
-            //             <p id="region">Region: ${country.region}</p>
-            //             <p>Capital: ${country.capital}</p>
-            //         </div>
-            //         </div>
-            //     </div>
-            // `;
             containerCards.appendChild(card);
         }
 
@@ -56,7 +40,7 @@ export default class extends AbstractView{
             <section class="countries-section">
                 <div class="filter-container">
                     <form id="formSearch">
-                        <input type="text" name="searchCountry" id="searchCountry" placeholder="Search for a country..." class="searching-part-inpt">
+                        <input type="text" name="searchCountry" id="searchCountry" placeholder="Search for a country..." class="searchCountry">
                     </form>
                     <select class="regionSelect" id="regionSelect">
                         <option value="">Filter by Region</option>
@@ -67,7 +51,7 @@ export default class extends AbstractView{
                         <option value="Region: Oceania">Oceania</option>
                     </select>
                 </div>
-                <div class="container">
+                <div class="center" id="center">
                     ${containerCards.innerHTML}
                 </div>
             </section>

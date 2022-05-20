@@ -14,7 +14,7 @@ export default class extends AbstractView{
             <video muted autoplay loop width="100%" src="/static/media/mixkit-hand-turning-a-luminous-earth-globe-in-the-dark-21607.mp4"></video>
         </div>
         <div onclick="window.location.href='/countries';"  class="background-content">
-            <div class="content">
+            <div class="background-content-content">
                 <h1>
                     explore the world
                 </h1>

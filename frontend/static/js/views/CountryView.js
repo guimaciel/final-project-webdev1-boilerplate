@@ -23,33 +23,43 @@ export default class extends AbstractView{
 
         
         let currency = "";
-        Object.keys(country.currencies).forEach((item) => {
-            currency += country.currencies[item].name + " (" + country.currencies[item].symbol + ") ";
-        });
+        if (country.currencies) {
+            Object.keys(country.currencies).forEach((item) => {
+                currency += country.currencies[item].name + " (" + country.currencies[item].symbol + ") ";
+            });
+        };
 
         let languages = "";
-        Object.keys(country.languages).forEach((item) => {
-            if (languages != "") {
-                languages += " / ";
-            }
-            languages += country.languages[item] + " ";
-        });
+        if (country.languages) {
+            Object.keys(country.languages).forEach((item) => {
+                if (languages != "") {
+                    languages += " / ";
+                }
+                languages += country.languages[item] + " ";
+            });
+        }
 
         let nativeName = "";
-        Object.keys(country.name.nativeName).forEach((item) => {
-            if (nativeName != "") {
-                nativeName += " / ";
-            }
-            nativeName += country.name.nativeName[item].common;
-        });
+        if (country.name.nativeName) {
+            Object.keys(country.name.nativeName).forEach((item) => {
+                if (nativeName != "") {
+                    nativeName += " / ";
+                }
+                nativeName += country.name.nativeName[item].common;
+            });
+        }
 
         let borders = "";
-        for (let bord of country.borders) {
-            for (let i = 0 ; i < countries.length ; i++) {
-                if (bord === countries[i].cca3) {
-                    borders += "<a href='/countries/" + bord + "'>" + countries[i].name.common + "</a>";
+        if (country.borders) {
+            for (let bord of country.borders) {
+                for (let i = 0 ; i < countries.length ; i++) {
+                    if (bord === countries[i].cca3) {
+                        borders += "<a href='/countries/" + bord + "'>" + countries[i].name.common + "</a>";
+                    }
                 }
             }
+        } else {
+            borders = "no borders";
         }
 
 
