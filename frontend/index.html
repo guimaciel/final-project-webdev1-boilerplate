@@ -5,30 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/frontend/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/index.css">
 </head>
 <body>
-    <div class="center">
-        <div class="property-card">
-          <a href="#">
-            <div class="property-image">
-              <div class="property-image-title">
-                
-              </div>
-            </div></a>
-          <div class="property-description">
-            <h5> Nome do pais </h5>
-            <p>Informação do país</p>
-          </div>
-        </div>
-      </div>
-    <nav>
+    <nav class="menu">
         <a href="/" class="nav__link" data-link>Home</a>
         <a href="/countries" class="nav__link" data-link>Countries</a>
+        <div></div>
+        <div class="menu-night" onclick="myFunction()"></div>
     </nav>
     <div id="app"></div>
     <script type="module" src="/static/js/countries.js"></script>
     <script type="module" src="/static/js/router.js"></script>
     <script type="module" src="/static/js/index.js"></script>
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
 </body>
 </html>
