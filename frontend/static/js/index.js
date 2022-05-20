@@ -1,7 +1,14 @@
+
 import {getCountries} from './countries.js'
 
 const countries = getCountries();
 
+console.log(window.location.pathname);
+
+if (window.location.pathname === "/") {
+    console.log("Main");
+
+}
 //console.log(countries);
 
 console.dir(window);
@@ -51,5 +58,5 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 
             }
         });
-    };
+        window.location.pathname};
 });

@@ -1,6 +1,8 @@
 import { getCountries } from "../countries.js";
 import AbstractView from "./AbstractView.js";
 
+console.log(window.location.pathname);
+
 export default class extends AbstractView{
     constructor(params) {
         super(params);
@@ -14,19 +16,38 @@ export default class extends AbstractView{
         for (let country of countries) {
           const card = document.createElement("div");
           card.innerHTML = `
-                <div class="country-cards">
-                    <div class="country-img">
-                        <a href="countries/${country.cca3}"><img src="${country.flags.png}" /></a>
-                    </div>
-                    <div class="country-information">
-                        <h2 id="countryName">${country.name.common}</h2>
+
+                <div class="center">
+                    <div class="property-card">
+                        <a href="countries/${country.cca3}">
+                        <div class="property-image" style="background-image:url('${country.flags.png}');">
+                            <div class="property-image-title">
+                            
+                            </div>
+                        </div></a>
+                        <div class="property-description">
+                        <h5>${country.name.common}</h5>
                         <p>Population: ${country.population}</p>
                         <p id="region">Region: ${country.region}</p>
                         <p>Capital: ${country.capital}</p>
-                    </div>
+                        </div>
                     </div>
                 </div>
-            `;
+                `;
+
+            //     <div class="country-cards">
+            //         <div class="country-img">
+            //             <a href="countries/${country.cca3}"><img src="${country.flags.png}" /></a>
+            //         </div>
+            //         <div class="country-information">
+            //             <h2 id="countryName">${country.name.common}</h2>
+            //             <p>Population: ${country.population}</p>
+            //             <p id="region">Region: ${country.region}</p>
+            //             <p>Capital: ${country.capital}</p>
+            //         </div>
+            //         </div>
+            //     </div>
+            // `;
             containerCards.appendChild(card);
         }
 

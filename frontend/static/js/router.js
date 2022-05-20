@@ -40,7 +40,8 @@ const router = async () => {
     const countries = getCountries();
     const params = getParams(match)
 
-        
+    
+    
     if(!match) {
         match = {
             route: routes[0],
@@ -69,7 +70,7 @@ window.addEventListener('popstate', router);
 document.addEventListener("DOMContentLoaded", () => {
     document.body.addEventListener("click", e => {
         if(e.target.matches("[data-link]")){
-            e.preventDefault();
+            // e.preventDefault();
             navigateTo(e.target.href);
         }
     })
