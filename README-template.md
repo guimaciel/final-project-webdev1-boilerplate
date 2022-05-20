@@ -31,19 +31,24 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+[Screenshot 2022-05-20 at 08-52-31 Homepage](https://user-images.githubusercontent.com/864781/169567363-3d0a67d7-88bc-4b6b-8e59-e0064fe34bd8.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![Screenshot 2022-05-20 at 08-54-38 Countries](https://user-images.githubusercontent.com/864781/169567438-5cd39f6e-739f-4485-aa24-32299cc88ce4.png)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
+![Screenshot 2022-05-20 at 08-55-00 Countries](https://user-images.githubusercontent.com/864781/169567492-ae3fdb8d-afb1-4196-8ec7-67b26b88711d.png)
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+![Screenshot 2022-05-20 at 08-55-18 Countries](https://user-images.githubusercontent.com/864781/169568680-672cd656-cec4-48ec-ad05-3b51ae8c8e36.png)
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Screenshot 2022-05-20 at 08-55-29 Countries](https://user-images.githubusercontent.com/864781/169568695-b0cb480d-cf69-4c32-a567-0c362a2c05ee.png)
+
+![Screenshot 2022-05-20 at 08-55-29 Countries](https://user-images.githubusercontent.com/864781/169568722-fc5c669a-aaa9-4eb2-98bb-4e03b90933f1.png)
+
+![Screenshot 2022-05-20 at 08-55-49 Country](https://user-images.githubusercontent.com/864781/169568740-8d0a5172-f1c8-4e54-b12a-dd1b2252b4ca.png)
+
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://github.com/guimaciel/final-project-webdev1-boilerplate
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -55,8 +60,6 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
